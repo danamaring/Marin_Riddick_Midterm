@@ -2,30 +2,42 @@
 <html>
 <head>
 	<title>TRAA</title>
-	<link rel="stylesheet" type="text/css" href="css/main_DESIGN.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main_DESIGN.css">
 </head>
 <body>
-	<main class="container">
+<main class="container">
 	<!--HEADER-->
 	<header class="header">
-		<div id="container_navbar">
-		</div>
-		<div class="navbar"></div> <!--collapsible navbar-->
-		<div class="logo_image"> 
-			<img src="images/traa_logo-MASTER.png"> 
-		</div>
+	<nav>
+		<ul class="headerNav">
+				<li><a href="#">HOME</a></li>
+				<li><a href="about_DESIGN.html">ABOUT US</a></li>
+				<li>PROJECTS</li>
+				<a href="index_DESIGN.html">
+				<img class="logoHeader" src="images/traa_logo-MASTER.png">
+				</a>
+				<li>GET INVOLVED</li>
+				<li>NEWSLETTERS</li>
+				<li><a href="contactus_DESIGN.html">CONTACT US</a></li>
+			</div>
+		</ul>
+	</nav>
 
-		<!--social media icons-->
+		<!--social media icons
 		<div class="facebook">
-			<img src="images/facebook.png">
+			<a href="https://www.facebook.com/groups/4TRAA/about/" target="_blank">
+				<img src="images/facebook.png">
+			</a>
 		</div>
 		<div class="email">
-			<img src="images/email_logo.png">
-		</div>
+			<a href="mailto:traa@anglers.org">
+				<img src="images/email_logo.png">
+			</a>
+		</div> -->
 
-		<h2 class="hero_title">TRAA</h2>
-		<h4 class="hero_subtitle">Thames River Anglers Assotiation</h4>
+		<h2 class="hero_title">Welcome to the TRAA <br> Official Site</h2>
+		<h4 class="hero_subtitle">Discover more about who we are, what we do, <br> and what you can do to help!</h4>
 	</header>
 	<!--MAIN-->
 		<div>
@@ -41,20 +53,40 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore.</h6>
-				<div class="about_button">
-					<h5>READ MORE!</h5><!--Read More Button-->
-				</div>
+				<button class="about_button">
+					<a href="about_DESIGN.html">
+						<h5>READ MORE!</h5>
+					</a>
+				</button>
 			</div>
 		</div>
 		
 		<!-- events carousel -->
 		<h2 class="events_title">UPCOMING EVENTS</h2>
-		<div class="events_flexbox">
-			<div> <img src="images/featured_image-one.JPG"></div>
-			<div> <img src="images/featured_image-two.JPG"></div>
-			<div> <img src="images/featured_image-three.JPG"></div> <!--RESIZE THISSSSSS!!-->
-			<div> <img src="images/featured_image-four.JPG"></div> <!--change hover thing-->
-		</div>
+		
+		<div class="carousel_events">
+	        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+	        <div class="carousel-item">
+	            <img src="images/projects-project_2_crs.png">
+	            <h3>BROWN TROUT RELEASE</h3>
+	        </div>
+	        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+	        <div class="carousel-item">
+	            <img src="images/projects-project_3_crs.JPG">
+	            <h3>CREEK HABITAT PROJECT</h3>
+	        </div>
+	        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+	        <div class="carousel-item">
+	            <img src="images/projects-project_4_crs.JPG">
+	            <h3>STREAM HABITAT WORK</h3>
+	        </div>
+	        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+	        <label for="carousel-2" class="carousel-control next control-1">›</label>
+	        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+	        <label for="carousel-3" class="carousel-control next control-2">›</label>
+	        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+	        <label for="carousel-1" class="carousel-control next control-3">›</label>
+	    </div>
 
 		<!-- memberships info -->
 			<h2 class="membership_title">BECOME A MEMBER TODAY</h2>
@@ -66,49 +98,84 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.</p>
 			</div>
-			<div class="memb_featured_image"> <img src="images/home-about-featured_image.jpg"></div>
-			<div class="memb_button">
-					<h5>READ MORE!</h5><!--Read More Button-->
-			</div>
+			<div class="memb_featured_image"> <img src="images/memberships-featured_image.jpg"></div>
+			<button class="memb_button">
+					<a href="#">
+						<h5>READ MORE!</h5>
+					</a>
+			</button>
 
-		<!-- local businesses -->
+		<!-- sponsors -->		
 		<h2 class="local_title">SPECIAL THANKS TO</h2>
 		<div class="local_flexbox">
-			<div> <img src="images/logo-guillevin.jpg"></div><!--THIS SHOULD BE A LINK-->
-			<div><img src="images/logo-melchers.jpg"></div><!--THIS SHOULD BE A LINK-->
-			<div><img src="images/logo-muma.jpg"></div><!--THIS SHOULD BE A LINK-->
+			<div>
+				<a href="https://www.guillevin.com/default/" target="_blank">
+					<img id="guillevin" src="images/logo-guillevin.jpg">
+				</a>			
+			</div>
+			<div>
+				<a href="https://www.melchersconstruction.com/" target="_blank">
+					<img id="melchers" src="images/logo-melchers.jpg">
+				</a>
+			</div>
+			<div>
+				<a href="http://www.mumamanufacturing.com/" target="_blank">
+					<img id="muma" src="images/logo-muma.jpg">
+				</a>
+			</div>
 		</div>
 		<div class="local_flexbox2">
-			<div><img src="images/logo-try_recycling.jpg"></div><!--THIS SHOULD BE A LINK-->
-			<div><img src="images/logo-angling_sports.jpg"></div><!--THIS SHOULD BE A LINK-->
+			<div>
+				<a href="http://tryrecycling.com/" target="_blank">
+					<img id="recycling" src="images/logo-try_recycling.jpg">
+				</a>
+			</div>
+			<div>
+				<a href="https://anglingsports.ca/" target="_blank">
+					<img id="angling" src="images/logo-angling_sports.jpg">
+				</a>
+			</div>
 		</div>
 
 	<!--FOOTER-->
 		<footer class="footer">
-			<div class="footer_logo"> <img src="images/traa_logo-MASTER.png"> </div>
+			<div class="footer_logo"> 
+				<a href="#">
+				<img src="images/traa_logo-MASTER.png"> 
+				</a>
+			</div>
 			<div class="footer_line_flex">
 				<div class="footer_line"></div> <!--footer division line-->
 			</div>
-			<div class="footer_navbar"> <!--footer navbar-->
+		<!--footer navbar-->
+			<div class="footer_navbar"> 
 				<nav>
 					<ul>
-						<li>HOME</li>
-						<li>ABOUT US</li>
-						<li>PROJECTS</li>
+						<li class="selected_footer"><a href="#">HOME</a></li>
+						<li><a href="about_DESIGN.html">ABOUT US</a></li>
+						<li> PROJECTS</li>
 						<li>GET INVOLVED</li>
 						<li>NEWSLETTERS</li>
-						<li>CONTACT US</li>
+						<li><a href="contactus_DESIGN.html">CONTACT US</a></li>
 					</ul>
 				</nav>
 			</div> 
 		
-			<div class="facebook_footer"> <img src="images/facebook-footer.png"></div>
-			<div class="email_footer"> <img src="images/email_logo-footer.png"></div>
+			<div class="facebook_footer">
+			<a href="https://www.facebook.com/groups/4TRAA/about/" target="_blank">
+				<img src="images/facebook-footer.png">
+			</a>
+			</div>
+			<div class="email_footer">
+			<a href="mailto:traa@anglers.org">
+				<img src="images/email_logo-footer.png">
+			</a>
+			</div>
 			<div class="copyright">
 				<h6>© Marin-Riddick Enterprises</h6>
 			</div>
 		</footer>
-	</main>
+</main>
 </body>
 </html>
 
