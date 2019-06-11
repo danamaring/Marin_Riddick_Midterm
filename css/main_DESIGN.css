@@ -55,26 +55,28 @@ body {
 	font-weight: bold;
 }
 
+#index, #about, #projects {
+	padding-right: 20px;
+}
+
+
+
 .headerNav li {
 	padding-top: 40px;
 	cursor: pointer;
 }
 
-.headerNav li:hover
-{
-  filter:drop-shadow(3px 3px 3px #5C5C5C);
+.headerNav li:hover {
+  filter:drop-shadow(3px 3px 3px #BDBDBD);
 }
 
 .headerNav a {	
   	color: #808080;
   	text-decoration: none;
-
 }
 
-.headerNav a:visited {	
-  	color: #808080;
+.headerNav li:visited, a:visited {	
   	text-decoration: none;
-
 }
 /*
 .facebook img {
